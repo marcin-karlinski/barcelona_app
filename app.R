@@ -111,7 +111,7 @@ ui <- dashboardPage(
             box(title = "Filter",status = "warning", solidHeader = TRUE,
                 pickerInput(inputId = "tree_type", 
                                   label = "Tree specie", 
-                                  choices = sort(unique(tree_agg$nom_catala)),
+                                  choices = tree_agg$nom_catala,
                                   #selected = unique(tree_agg$nom_catala), 
                                   multiple = T,
                                   options = list(`actions-box` = TRUE,
