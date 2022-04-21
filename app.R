@@ -311,7 +311,7 @@ server <- function(input, output, session) {
   
   
   bikes$data <- reactive({bikesDF[type %in% input$bike_type &
-                                 between(slots_total, left = input$slider_bikes[1], right = input$slider_bikes[2]),]})
+                                 dplyr::between(slots_total, left = input$slider_bikes[1], right = input$slider_bikes[2]),]})
   
   
   trees$data <- reactive({treesDF[nom_catala %in% input$tree_type &
