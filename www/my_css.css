@@ -1,0 +1,14 @@
+.leaflet-container{
+   margin-left: 2% !important;
+   margin-right: 2% !important;
+   width: 96% !important;
+   height: 80vh !important;
+}
+
+.small-box{height: 20vh !important;}
+
+.btn:{ width: 150%; font-size: 30px;}
+
+.modal-dialog{
+    width: fit-content !important;
+}
